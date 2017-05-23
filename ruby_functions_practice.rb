@@ -21,3 +21,7 @@ end
 def length_of_string(variable)
   variable = "A string of length 21".length
 end  
+
+def join_string(string_1, string_2)
+  string_1 + string_2
+end  
