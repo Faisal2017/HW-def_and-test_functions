@@ -19,7 +19,7 @@ def divide(num_1, num_2)
 end  
 
 def length_of_string(variable)
-  variable = "A string of length 21".length
+  variable.length
 end  
 
 def join_string(string_1, string_2)
@@ -29,3 +29,4 @@ end
 def add_string_as_number(variable, variable_2)
   variable.to_i + variable_2.to_i
 end  
+
