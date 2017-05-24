@@ -30,8 +30,8 @@ class Functions_Practice < MiniTest::Test
 
   def test_length_of_string()
     test_string = "A string of length 21"
-    length_of_string = length_of_string( test_string )
-    assert_equal( 21, length_of_string )
+    length_of_string_result = length_of_string( test_string )
+    assert_equal( 21, length_of_string_result )
   end
 
   def test_join_string()
@@ -85,8 +85,9 @@ class Functions_Practice < MiniTest::Test
 
   # #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    
+    farenheit = 68
+    celsius = (farenheit - 32) * (5/9) 
+    assert_equal(20, celsius)
   end
-
 
 end

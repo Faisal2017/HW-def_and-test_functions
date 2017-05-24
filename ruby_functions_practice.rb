@@ -54,4 +54,12 @@ end
 
 def volume_of_cube(edge)
   return edge ** 3
+end 
+
+def volume_of_sphere(radius) 
+  volume = (4.0 / 3.0) * Math::PI * radius**3
+end
+  
+def fahrenheit_to_celsius(farenheit)
+  return celsius = (farenheit - 32) * (5/9)
 end  
