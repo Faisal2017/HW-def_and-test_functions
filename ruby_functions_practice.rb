@@ -52,3 +52,6 @@ def number_to_short_month_name(number)
   end  
 end  
 
+def volume_of_cube(edge)
+  return edge ** 3
+end  
