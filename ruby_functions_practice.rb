@@ -27,7 +27,7 @@ def join_string(string_1, string_2)
 end  
 
 def add_string_as_number(variable, variable_2)
-  variable.to_i + variable_2.to_i
+  variable.to_i() + variable_2.to_i()
 end  
 
 def number_to_full_month_name(number)
@@ -52,14 +52,22 @@ def number_to_short_month_name(number)
   end  
 end  
 
+# Another way of doing number_to_short_month_name is to use 2
+# functions!! Example below
+# def number_to_short_month_name(number)
+#   long_month_name = number_to_full_month_name(number)
+#   return long_month_name[0..2]
+# end
+
 def volume_of_cube(edge)
   return edge ** 3
 end 
 
 def volume_of_sphere(radius) 
-  volume = (4.0 / 3.0) * Math::PI * radius**3
+  volume = (4.0 / 3.0) * Math::PI * (radius**3)
+  volume.round(1)
 end
-  
+
 def fahrenheit_to_celsius(farenheit)
-  return celsius = (farenheit - 32) * (5/9)
+  return celsius = (farenheit - 32.0) * (5.0/9.0)  
 end  
